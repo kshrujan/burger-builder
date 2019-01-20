@@ -1,0 +1,47 @@
+.NavigationItem {
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box; 
+}
+
+.NavigationItem a {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+    color: #40A4C8;
+}
+
+
+
+/* remember, media queries are merged with their regular counterparts. So anytime there's a duplicate, media queries will override the regular ones */
+@media (min-width: 500px) {
+    .NavigationItem {
+        margin: 0;
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .NavigationItem a {
+        color: black;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .NavigationItem a:hover,
+    .NavigationItem a:active,
+    .NavigationItem a.active {
+        color: black;
+        border-bottom: 2px solid #40A4C8;
+    }
+}

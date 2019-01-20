@@ -1,0 +1,35 @@
+.NavBar {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+}
+
+.NavBar nav {
+    height: 100%;
+}
+
+.Logo {
+    height: 60%;
+}
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}
+
+@media (min-width: 499px) {
+    .DesktopOnlyToggle {
+        display: none;
+    }
+} 
